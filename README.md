@@ -3,7 +3,7 @@
 Detecting Credit Card Fraud using XGBoost and Bayesian Hyper-Parameter Optimization
 
 # Summary
-A detailed description of the project can be found [here]([url](https://github.com/Nam1707/payment-fraud-detection/blob/main/Credit_Fraud_Detection.ipynb)).
+A detailed description of the project can be found [here](https://github.com/Nam1707/payment-fraud-detection/blob/main/Credit_Fraud_Detection.ipynb).
 
 In this project I use the Extreme Gradient Boosting (XGBoost) algorithm to detect fradulent credit card transactions in a real-world (anonymized) dataset of european credit card transactions. I evaluate the performance of the model on a held-out test set and compare its performance to a few other popular classification algorithms, namely, Logistic Regression, Random Forests and Extra Trees Classifier, and show that a well-tuned XGBoost classifier outperforms all of them.
 
@@ -11,6 +11,6 @@ The main challenge in fraud detection is the extreme class imbalance in the data
 
 Hyper-parameter tuning can considerably improve the performance of learning algorithms. XGBoost has many hyper-parameters which make it powerful and flexible, but also very difficult to tune due to the high-dimensional parameter space. Instead of the more traditional tuning methods (i.e. grid search and random search) that perform a brute force search through the parameter space, I use Bayesian hyper-parameter optimization (implemented in the hyperopt package) which has been shown to be more efficient than grid and random search (Bergstra, Yamins, and Cox 2013).
 
-The full python code can be found [here]([url](https://github.com/Nam1707/payment-fraud-detection/blob/main/Credit_Fraud_Detection.py)).
+The full python code can be found [here](https://github.com/Nam1707/payment-fraud-detection/blob/main/Credit_Fraud_Detection.py).
 
-Keywords: XGBoost, Imbalanced/Cost-sensitive learning, Bayesian hyper-parameter tuning
+Keywords: **XGBoost, Imbalanced/Cost-sensitive learning, Bayesian hyper-parameter tuning**
