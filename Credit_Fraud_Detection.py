@@ -14,17 +14,17 @@ MIN_PRECISION = 0.05
 # The current version of XGBoost uses a conditional statement that
 # the current version SciPy (internally used by XGBoost) doesn't like.
 # This suppresses SciPy's deprecation warning message
-warnings.filterwarnings('ignore', category = DeprecationWarning)
+warnings.filterwarnings('ignore')
 
 def objective(params, X, y, X_early_stop, y_early_stop, scorer, n_folds = 10):
 
-    pos_count = y_train.sum()
-    neg_count = len(y_train) - pos_count
+    pos_count = y.sum()
+    neg_count = len(y) - pos_count
     imbalance_ratio = neg_count / pos_count
     
     xgb_clf = XGBClassifier(**params, scale_pos_weight=imbalance_ratio,
                             n_estimators = 2000, n_jobs = 1, 
-                            early_stopping_rounds = 50, eval_metric = 'logloss')
+                            early_stopping_rounds = 10, eval_metric = 'logloss')
 
     xgb_fit_params = {'eval_set': [(X_early_stop, y_early_stop)],
                       'verbose': False}
@@ -144,3 +144,5 @@ if __name__ == "__main__":
     print('\tTest set performance:')
     print('\tRecall    = %2.3f' % test_recall)
     print('\tPrecision = %2.3f' % test_precision)
+
+    print('\nDone!')
