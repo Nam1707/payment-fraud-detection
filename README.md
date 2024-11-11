@@ -1,9 +1,9 @@
-# payment-fraud-detection
+# Payment Fraud Detection
 
 Detecting Credit Card Fraud using XGBoost and Bayesian Hyper-Parameter Optimization
 
 # Summary
-A detailed description of the project can be found here.
+A detailed description of the project can be found [here](url).
 
 In this project I use the Extreme Gradient Boosting (XGBoost) algorithm to detect fradulent credit card transactions in a real-world (anonymized) dataset of european credit card transactions. I evaluate the performance of the model on a held-out test set and compare its performance to a few other popular classification algorithms, namely, Logistic Regression, Random Forests and Extra Trees Classifier (Geurts, Ernst, and Wehenkel 2006), and show that a well-tuned XGBoost classifier outperforms all of them.
 
